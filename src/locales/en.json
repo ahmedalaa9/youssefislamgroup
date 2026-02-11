@@ -1,0 +1,274 @@
+{
+  "slogan": "Quality execution begins with precise planning",
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "gallery": "Projects",
+    "contact": "Contact Us",
+    "brandName": "Yousef Abd Alsalam",
+    "brandSubtitle": "General Contracting Company",
+    "toggleDark": "Switch to dark mode",
+    "toggleLight": "Switch to light mode",
+    "services": "Services"
+  },
+  "footer": {
+    "description": "Specialized contracting company in factory construction with over 15 years of experience.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved",
+    "brandName": "Yousef Abd Alsalam",
+    "brandSubtitle": "General Contracting Company",
+    "copyrightName": "Yousef Abd Alsalam General Contracting"
+  },
+  "home": {
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "text": "Contact us today to discuss your next project and get a free consultation"
+    },
+    "about_new": {
+      "title": "More Than Just a Contractor... We Are Your Partners in Success",
+      "description": "With over 15 years of experience in the Saudi market, we have established ourselves as pioneers in the construction of factories and industrial buildings. We don't just build concrete structures; we provide smart engineering solutions that serve your production lines. From excavation and foundations to final finishing, we guarantee execution precision, timely delivery, and long-lasting quality.",
+      "readMore": "Read More"
+    }
+  },
+  "hero": {
+    "title1": "From Planning to Operation",
+    "title2": "Building Your Industrial Vision",
+    "subtitle": "Your strategic partner for executing major factories and industrial facilities on a turnkey basis, according to the highest global engineering standards",
+    "cta": "Our Portfolio",
+    "cta2": "Get a Quote"
+  },
+  "why": {
+    "title": "Why Choose Us",
+    "subtitle": "Excellence Through Expertise and Experience",
+    "expertise": {
+      "title": "True Expertise",
+      "description": "Real experience in factories and production facilities with proven track record"
+    },
+    "technical": {
+      "title": "Technical Understanding",
+      "description": "Precise knowledge of production lines and operational requirements"
+    },
+    "partnerships": {
+      "title": "Elite Partnerships",
+      "description": "Proven ability to handle major brands and strategic collaborations"
+    },
+    "turnkey": {
+      "title": "Turnkey Execution",
+      "description": "From excavation to key handover - complete solutions"
+    },
+    "commitment": {
+      "title": "Strict Commitment",
+      "description": "Unwavering quality, time adherence, and safety standards"
+    }
+  },
+  "zamil": {
+    "title": "Strategic Partners",
+    "subtitle": "Zamil Group Partnership",
+    "description": "A milestone in our journey, executing diverse projects that reflect trust and continuity",
+    "project1": "Zamil Tanks Factory",
+    "project1Desc": "Advanced manufacturing facility for storage tanks and pressure vessels",
+    "project2": "Zamil Tanks Warehouse",
+    "project2Desc": "Large-scale warehouse infrastructure with modern storage systems",
+    "project3": "Zamil Lighting Showroom",
+    "project3Desc": "Premium retail showcase designed for product exhibition and sales"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Excellence in Industrial Construction",
+    "whoWeAre": "Who We Are",
+    "description": "We are a contracting company specializing in factory construction with over 15 years of experience. Strategic partners with industry leaders like Zamil Group.",
+    "portfolioText": "Our project portfolio with Zamil Group includes Zamil Tanks Factory and Zamil Lighting Showroom. We also take pride in our partnerships with leading companies such as Gulf 3P Plastic Products, GLC Arabia for Paints, and Paper World Factory.",
+    "stats": {
+      "experience": "Years of Experience",
+      "projects": "Completed Projects",
+      "clients": "Satisfied Clients"
+    },
+    "vision": "Vision",
+    "visionText": "To be the leading contractor in industrial and factory construction, delivering world-class projects that exceed client expectations.",
+    "mission": "Mission",
+    "missionText": "Providing integrated construction solutions from initial planning to final delivery, with a focus on quality, precision, and client satisfaction.",
+    "values": "Our Values",
+    "value1": "Quality and Excellence",
+    "value2": "Timely Delivery",
+    "value3": "Client Satisfaction",
+    "value4": "Safety First",
+    "sloganDesc": "We are committed to the highest quality standards at every stage of construction, from initial planning to final delivery."
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive Construction Solutions",
+    "construction": "General Construction",
+    "constructionDesc": "Complete building and infrastructure solutions",
+    "electrical": "Electrical Systems",
+    "electricalDesc": "Professional electrical installations and maintenance",
+    "plumbing": "Plumbing & Sanitary",
+    "plumbingDesc": "Complete plumbing and water systems",
+    "hvac": "HVAC Systems",
+    "hvacDesc": "Climate control and ventilation solutions",
+    "landscaping": "Landscaping",
+    "landscapingDesc": "Professional outdoor and garden design",
+    "turnkey": "Turnkey Solutions",
+    "turnkeyDesc": "From excavation to finishing touches"
+  },
+  "projects": {
+    "noProjects": "No projects in this category",
+    "title": "Our Projects",
+    "subtitle": "Portfolio of Excellence",
+    "filter": {
+      "all": "All Projects",
+      "factories": "Factories",
+      "warehouses": "Warehouses",
+      "showrooms": "Showrooms"
+    },
+    "zamil_tanks": {
+      "name": "Zamil Tanks Factory",
+      "desc": "Advanced manufacturing facility for storage tanks and pressure vessels",
+      "highlights": [
+        "Production-ready infrastructure",
+        "State-of-the-art equipment",
+        "Quality control systems"
+      ]
+    },
+    "gulf_3p": {
+      "name": "Gulf 3P Plastic Products",
+      "desc": "Leading plastic pipe manufacturer facility with integrated production systems",
+      "highlights": [
+        "Complete production lines",
+        "Quality assurance",
+        "Modern infrastructure"
+      ]
+    },
+    "paper_world": {
+      "name": "Paper World Factory",
+      "desc": "Comprehensive construction compatible with production line requirements and operational flow",
+      "highlights": [
+        "Production efficiency",
+        "Layout optimization",
+        "Utility integration"
+      ]
+    },
+    "glc": {
+      "name": "GLC Paints Arabia",
+      "desc": "Chemical factory construction and finishing with strict adherence to safety and quality standards for heavy operational loads",
+      "highlights": [
+        "Safety compliance",
+        "Chemical resistance",
+        "Durability standards"
+      ]
+    },
+    "insulated_doors": {
+      "name": "Insulated Doors Factory",
+      "desc": "Specialized industrial facility engineered to meet rigorous insulation and thermal standards",
+      "highlights": [
+        "Insulation standards",
+        "Thermal efficiency",
+        "Structural integrity"
+      ]
+    },
+    "premium_aluminum": {
+      "name": "Premium Aluminum",
+      "desc": "Advanced metalworking facility with precision engineering and quality control",
+      "highlights": [
+        "Precision facilities",
+        "Quality control",
+        "Modern equipment"
+      ]
+    },
+    "bayan_steel": {
+      "name": "Bayan Steel",
+      "desc": "Heavy-duty steel manufacturing facility with comprehensive infrastructure",
+      "highlights": [
+        "Heavy-load capacity",
+        "Production efficiency",
+        "Safety systems"
+      ]
+    },
+    "other": {
+      "middle_east": "Middle East Industrial Solutions",
+      "study_testing": "Study for Testing & Labs Facility",
+      "skeen_equipment": "Skeen Equipment Manufacturing",
+      "adan_plastics": "Adan Plastics Production Complex",
+      "rocks_factory": "Rocks Extraction & Processing"
+    }
+  },
+  "trusted": {
+    "title": "Trusted By Industry Leaders",
+    "subtitle": "Our Strategic Partners"
+  },
+  "contact": {
+    "getInTouchTitle": "Get In Touch",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "businessHours": "Business Hours",
+    "businessHoursValue": "Sunday - Thursday: 8:00 AM - 5:00 PM",
+    "sending": "Sending...",
+    "locationMap": "Location Map",
+    "title": "Contact Us",
+    "subtitle": "Get in Touch",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "message": "Your Message",
+    "send": "Send Message",
+    "info": "Contact Information",
+    "address": "Address",
+    "addressText": "Riyadh, Kingdom of Saudi Arabia",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again."
+  },
+  "servicesPage": {
+    "hero": {
+      "title": "Our Engineering Services",
+      "subtitle": "Comprehensive solutions for industrial construction, from design to operation"
+    },
+    "construction": {
+      "title": "General Construction",
+      "desc": "Complete execution of factory buildings and administrative structures with high precision.",
+      "feat1": "Steel Structure Erection",
+      "feat2": "Concrete Foundations & Flooring",
+      "feat3": "Industrial Roofing & Cladding"
+    },
+    "electrical": {
+      "title": "Electrical Systems (MEP)",
+      "desc": "Advanced electrical installations for heavy machinery and industrial lighting.",
+      "feat1": "Power Distribution Systems",
+      "feat2": "Low Current Systems",
+      "feat3": "Industrial Lighting Solutions"
+    },
+    "plumbing": {
+      "title": "Plumbing & Fire Fighting",
+      "desc": "Designing and installing water supply, drainage, and safety systems.",
+      "feat1": "Industrial Water Networks",
+      "feat2": "Fire Fighting Systems (FF)",
+      "feat3": "Drainage & Waste Treatment"
+    },
+    "hvac": {
+      "title": "HVAC Systems",
+      "desc": "Climate control solutions to ensure optimal operating conditions.",
+      "feat1": "Central Air Conditioning",
+      "feat2": "Industrial Ventilation",
+      "feat3": "Ducting & Air Quality Control"
+    },
+    "finishing": {
+      "title": "Epoxy & Finishing",
+      "desc": "High-durability flooring and finishing works for clean industrial environments.",
+      "feat1": "Epoxy Flooring Application",
+      "feat2": "Interior & Exterior Painting",
+      "feat3": "Partitioning & False Ceilings"
+    },
+    "consulting": {
+      "title": "Engineering Consulting",
+      "desc": "Expert advice on factory layout, workflow optimization, and compliance.",
+      "feat1": "Project Planning & Design",
+      "feat2": "Structure Safety Analysis",
+      "feat3": "Compliance & Safety Standards"
+    },
+    "cta": {
+      "title": "Need a Customized Solution?",
+      "text": "We understand that every industrial project is unique. Let's discuss your specific requirements.",
+      "button": "Request Consultation"
+    }
+  }
+}
