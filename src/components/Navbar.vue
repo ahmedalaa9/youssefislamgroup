@@ -40,7 +40,7 @@
           </router-link>
         </div>
 
-        <div class="flex items-center space-x-2 rtl:space-x-reverse">
+        <div class="flex items-center gap-1 rtl:space-x-reverse">
           <button
             @click="appStore.toggleTheme()"
             :aria-label="
