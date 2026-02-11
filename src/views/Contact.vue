@@ -233,7 +233,7 @@
   </div> -->
 </template>
 
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import { ref, reactive } from "vue";
 import { useI18n } from "vue-i18n";
 import { MapPin, Phone, Mail, Clock } from "lucide-vue-next";
@@ -271,4 +271,4 @@ const handleSubmit = async () => {
     }, 5000);
   }
 };
-</script>
+</script> -->

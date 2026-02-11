@@ -145,7 +145,7 @@ import { ref, computed } from "vue";
 import { useI18n } from "vue-i18n";
 import { useRoute } from "vue-router";
 import { useAppStore } from "../stores/useAppStore";
-import { Building2, Sun, Moon, Menu, X } from "lucide-vue-next";
+import { Sun, Moon, Menu, X } from "lucide-vue-next";
 
 const { t } = useI18n();
 const route = useRoute();

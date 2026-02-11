@@ -138,7 +138,7 @@
   </div> -->
 </template>
 
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import { useI18n } from "vue-i18n";
 
 import { Eye, Target, Award, Clock, Users, Shield } from "lucide-vue-next";
@@ -151,4 +151,4 @@ const values = [
   { icon: Users, title: "about.value3" },
   { icon: Shield, title: "about.value4" },
 ];
-</script>
+</script> -->

@@ -126,79 +126,79 @@
 </template>
 
 <script setup lang="ts">
-import { useI18n } from "vue-i18n";
-import {
-  Building2,
-  Zap,
-  Droplet,
-  Wind,
-  PaintBucket,
-  HardHat,
-  ArrowRight,
-} from "lucide-vue-next";
+// import { useI18n } from "vue-i18n";
+// import {
+//   Building2,
+//   Zap,
+//   Droplet,
+//   Wind,
+//   PaintBucket,
+//   HardHat,
+//   ArrowRight,
+// } from "lucide-vue-next";
 
-const { t } = useI18n();
+// const { t } = useI18n();
 
-const servicesList = [
-  {
-    icon: Building2,
-    titleKey: "servicesPage.construction.title",
-    descKey: "servicesPage.construction.desc",
-    features: [
-      "servicesPage.construction.feat1",
-      "servicesPage.construction.feat2",
-      "servicesPage.construction.feat3",
-    ],
-  },
-  {
-    icon: Zap,
-    titleKey: "servicesPage.electrical.title",
-    descKey: "servicesPage.electrical.desc",
-    features: [
-      "servicesPage.electrical.feat1",
-      "servicesPage.electrical.feat2",
-      "servicesPage.electrical.feat3",
-    ],
-  },
-  {
-    icon: Droplet,
-    titleKey: "servicesPage.plumbing.title",
-    descKey: "servicesPage.plumbing.desc",
-    features: [
-      "servicesPage.plumbing.feat1",
-      "servicesPage.plumbing.feat2",
-      "servicesPage.plumbing.feat3",
-    ],
-  },
-  {
-    icon: Wind,
-    titleKey: "servicesPage.hvac.title",
-    descKey: "servicesPage.hvac.desc",
-    features: [
-      "servicesPage.hvac.feat1",
-      "servicesPage.hvac.feat2",
-      "servicesPage.hvac.feat3",
-    ],
-  },
-  {
-    icon: PaintBucket,
-    titleKey: "servicesPage.finishing.title",
-    descKey: "servicesPage.finishing.desc",
-    features: [
-      "servicesPage.finishing.feat1",
-      "servicesPage.finishing.feat2",
-      "servicesPage.finishing.feat3",
-    ],
-  },
-  {
-    icon: HardHat,
-    titleKey: "servicesPage.consulting.title",
-    descKey: "servicesPage.consulting.desc",
-    features: [
-      "servicesPage.consulting.feat1",
-      "servicesPage.consulting.feat2",
-      "servicesPage.consulting.feat3",
-    ],
-  },
-];
+// const servicesList = [
+//   {
+//     icon: Building2,
+//     titleKey: "servicesPage.construction.title",
+//     descKey: "servicesPage.construction.desc",
+//     features: [
+//       "servicesPage.construction.feat1",
+//       "servicesPage.construction.feat2",
+//       "servicesPage.construction.feat3",
+//     ],
+//   },
+//   {
+//     icon: Zap,
+//     titleKey: "servicesPage.electrical.title",
+//     descKey: "servicesPage.electrical.desc",
+//     features: [
+//       "servicesPage.electrical.feat1",
+//       "servicesPage.electrical.feat2",
+//       "servicesPage.electrical.feat3",
+//     ],
+//   },
+//   {
+//     icon: Droplet,
+//     titleKey: "servicesPage.plumbing.title",
+//     descKey: "servicesPage.plumbing.desc",
+//     features: [
+//       "servicesPage.plumbing.feat1",
+//       "servicesPage.plumbing.feat2",
+//       "servicesPage.plumbing.feat3",
+//     ],
+//   },
+//   {
+//     icon: Wind,
+//     titleKey: "servicesPage.hvac.title",
+//     descKey: "servicesPage.hvac.desc",
+//     features: [
+//       "servicesPage.hvac.feat1",
+//       "servicesPage.hvac.feat2",
+//       "servicesPage.hvac.feat3",
+//     ],
+//   },
+//   {
+//     icon: PaintBucket,
+//     titleKey: "servicesPage.finishing.title",
+//     descKey: "servicesPage.finishing.desc",
+//     features: [
+//       "servicesPage.finishing.feat1",
+//       "servicesPage.finishing.feat2",
+//       "servicesPage.finishing.feat3",
+//     ],
+//   },
+//   {
+//     icon: HardHat,
+//     titleKey: "servicesPage.consulting.title",
+//     descKey: "servicesPage.consulting.desc",
+//     features: [
+//       "servicesPage.consulting.feat1",
+//       "servicesPage.consulting.feat2",
+//       "servicesPage.consulting.feat3",
+//     ],
+//   },
+// ];
 </script>
