@@ -251,25 +251,25 @@
             <div class="grid grid-cols-2 gap-4">
               <div class="space-y-4 mt-8">
                 <img
-                  src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&h=800&fit=crop"
-                  alt="Industrial Construction"
+                  src="/images/gallery/war2/war2 - 1.jpeg"
+                  alt="GLC Project"
                   class="rounded-2xl shadow-lg w-full h-64 object-cover hover:scale-[1.02] transition-transform duration-500"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=600&h=600&fit=crop"
-                  alt="Factory Interior"
+                  src="/images/gallery/war2/war2 - 3.jpeg"
+                  alt="Egada Project"
                   class="rounded-2xl shadow-lg w-full h-48 object-cover hover:scale-[1.02] transition-transform duration-500"
                 />
               </div>
               <div class="space-y-4">
                 <img
-                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=600&fit=crop"
-                  alt="Engineering Planning"
+                  src="/images/gallery/sken/sken - 1.jpeg"
+                  alt="Sken Factory Project"
                   class="rounded-2xl shadow-lg w-full h-48 object-cover hover:scale-[1.02] transition-transform duration-500"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&h=800&fit=crop"
-                  alt="Construction Site"
+                  src="/images/gallery/khalegya/khalegya-1.jpg"
+                  alt="Khalegya Project"
                   class="rounded-2xl shadow-lg w-full h-64 object-cover hover:scale-[1.02] transition-transform duration-500"
                 />
               </div>

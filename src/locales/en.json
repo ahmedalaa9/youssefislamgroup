@@ -113,84 +113,25 @@
     "turnkeyDesc": "From excavation to finishing touches"
   },
   "projects": {
-    "noProjects": "No projects in this category",
     "title": "Our Projects",
     "subtitle": "Portfolio of Excellence",
-    "filter": {
-      "all": "All Projects",
-      "factories": "Factories",
-      "warehouses": "Warehouses",
-      "showrooms": "Showrooms"
-    },
-    "zamil_tanks": {
-      "name": "Zamil Tanks Factory",
-      "desc": "Advanced manufacturing facility for storage tanks and pressure vessels",
-      "highlights": [
-        "Production-ready infrastructure",
-        "State-of-the-art equipment",
-        "Quality control systems"
-      ]
-    },
-    "gulf_3p": {
-      "name": "Gulf 3P Plastic Products",
-      "desc": "Leading plastic pipe manufacturer facility with integrated production systems",
-      "highlights": [
-        "Complete production lines",
-        "Quality assurance",
-        "Modern infrastructure"
-      ]
-    },
-    "paper_world": {
-      "name": "Paper World Factory",
-      "desc": "Comprehensive construction compatible with production line requirements and operational flow",
-      "highlights": [
-        "Production efficiency",
-        "Layout optimization",
-        "Utility integration"
-      ]
+    "khalegya": {
+      "name": "El khalegya"
     },
     "glc": {
-      "name": "GLC Paints Arabia",
-      "desc": "Chemical factory construction and finishing with strict adherence to safety and quality standards for heavy operational loads",
-      "highlights": [
-        "Safety compliance",
-        "Chemical resistance",
-        "Durability standards"
-      ]
+      "name": "GLC"
     },
-    "insulated_doors": {
-      "name": "Insulated Doors Factory",
-      "desc": "Specialized industrial facility engineered to meet rigorous insulation and thermal standards",
-      "highlights": [
-        "Insulation standards",
-        "Thermal efficiency",
-        "Structural integrity"
-      ]
+    "egada": {
+      "name": "Egada"
     },
-    "premium_aluminum": {
-      "name": "Premium Aluminum",
-      "desc": "Advanced metalworking facility with precision engineering and quality control",
-      "highlights": [
-        "Precision facilities",
-        "Quality control",
-        "Modern equipment"
-      ]
+    "alam_elwaraa": {
+      "name": "Alam elwaraa"
     },
-    "bayan_steel": {
-      "name": "Bayan Steel",
-      "desc": "Heavy-duty steel manufacturing facility with comprehensive infrastructure",
-      "highlights": [
-        "Heavy-load capacity",
-        "Production efficiency",
-        "Safety systems"
-      ]
+    "seken": {
+      "name": "seken factory"
     },
-    "other": {
-      "middle_east": "Middle East Industrial Solutions",
-      "study_testing": "Study for Testing & Labs Facility",
-      "skeen_equipment": "Skeen Equipment Manufacturing",
-      "adan_plastics": "Adan Plastics Production Complex",
-      "rocks_factory": "Rocks Extraction & Processing"
+    "middle_east": {
+      "name": "middle east"
     }
   },
   "trusted": {

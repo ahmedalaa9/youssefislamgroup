@@ -1,14 +1,11 @@
 <template>
-  <div class="flex justify-center items-center h-[80vh]">
-    <h1 class="text-5xl font-bold mt-20">Comming Soon ...</h1>
-  </div>
-  <!-- <div class="min-h-screen pt-20">
+  <div class="min-h-screen pt-20">
     <section
       class="relative h-[40vh] flex items-center justify-center overflow-hidden"
     >
       <div class="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&h=1080&fit=crop"
+          src="/images/hero-section.jpg"
           alt="Contact us"
           class="w-full h-full object-cover"
         />
@@ -31,244 +28,101 @@
       </div>
     </section>
 
-    <section class="py-20 bg-white dark:bg-secondary-light">
+    <section class="py-20 bg-gray-50 dark:bg-secondary-light">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div>
-            <h2 class="text-3xl font-bold text-secondary dark:text-white mb-8">
-              {{ t("contact.getInTouchTitle") }}
-            </h2>
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-4xl font-bold text-secondary dark:text-white mb-4">
+            {{ t("contact.getInTouchTitle") }}
+          </h2>
+          <p class="text-gray-600 dark:text-gray-400 text-lg">
+            {{ t("contact.info") }}
+          </p>
+        </div>
 
-            <form @submit.prevent="handleSubmit" class="space-y-6">
-              <div>
-                <label
-                  class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                >
-                  {{ t("contact.name") }}
-                </label>
-                <input
-                  v-model="form.name"
-                  type="text"
-                  required
-                  class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-secondary text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary placeholder-gray-500 dark:placeholder-gray-400"
-                />
-              </div>
-
-              <div>
-                <label
-                  class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                >
-                  {{ t("contact.email") }}
-                </label>
-                <input
-                  v-model="form.email"
-                  type="email"
-                  required
-                  class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-secondary text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary placeholder-gray-500 dark:placeholder-gray-400"
-                />
-              </div>
-
-              <div>
-                <label
-                  class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                >
-                  {{ t("contact.phone") }}
-                </label>
-                <input
-                  v-model="form.phone"
-                  type="tel"
-                  required
-                  class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-secondary text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary placeholder-gray-500 dark:placeholder-gray-400"
-                />
-              </div>
-
-              <div>
-                <label
-                  class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                >
-                  {{ t("contact.message") }}
-                </label>
-                <textarea
-                  v-model="form.message"
-                  required
-                  rows="5"
-                  class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-secondary text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary resize-none placeholder-gray-500 dark:placeholder-gray-400"
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                :disabled="isSubmitting"
-                class="w-full px-8 py-4 bg-primary hover:bg-primary-dark text-secondary font-bold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
-              >
-                {{
-                  isSubmitting
-                    ? t("contact.sending")
-                    : t("contact.send")
-                }}
-              </button>
-
-              <div
-                v-if="submitStatus"
-                :class="[
-                  'p-4 rounded-lg text-center font-medium',
-                  submitStatus === 'success'
-                    ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200'
-                    : 'bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200',
-                ]"
-              >
-                {{
-                  submitStatus === "success"
-                    ? t("contact.success")
-                    : t("contact.error")
-                }}
-              </div>
-            </form>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Address -->
+          <div
+            class="bg-white dark:bg-secondary p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 text-center group transform hover:-translate-y-1"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 dark:bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300"
+            >
+              <MapPin class="w-8 h-8 text-primary" />
+            </div>
+            <h4 class="text-xl font-bold text-secondary dark:text-white mb-3">
+              {{ t("contact.address") }}
+            </h4>
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+              {{ t("contact.addressText") }}
+            </p>
           </div>
 
-          <div class="space-y-8">
-            <div>
-              <h3
-                class="text-2xl font-bold text-secondary dark:text-white mb-6"
-              >
-                {{ t("contact.info") }}
-              </h3>
-
-              <div class="space-y-6">
-                <div class="flex items-start space-x-4 rtl:space-x-reverse">
-                  <div
-                    class="p-3 bg-primary/10 dark:bg-primary/20 rounded-full flex-shrink-0"
-                  >
-                    <MapPin class="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4
-                      class="font-semibold text-secondary dark:text-white mb-1"
-                    >
-                      {{ t("contact.address") }}
-                    </h4>
-                    <p class="text-gray-600 dark:text-gray-400">
-                      {{ t("contact.addressText") }}
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex items-start space-x-4 rtl:space-x-reverse">
-                  <div
-                    class="p-3 bg-primary/10 dark:bg-primary/20 rounded-full flex-shrink-0"
-                  >
-                    <Phone class="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4
-                      class="font-semibold text-secondary dark:text-white mb-1"
-                    >
-                      {{ t("contact.phoneLabel") }}
-                    </h4>
-                    <a
-                      href="tel:+966123456789"
-                      class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
-                    >
-                      +966 12 345 6789
-                    </a>
-                  </div>
-                </div>
-
-                <div class="flex items-start space-x-4 rtl:space-x-reverse">
-                  <div
-                    class="p-3 bg-primary/10 dark:bg-primary/20 rounded-full flex-shrink-0"
-                  >
-                    <Mail class="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4
-                      class="font-semibold text-secondary dark:text-white mb-1"
-                    >
-                      {{ t("contact.emailLabel") }}
-                    </h4>
-                    <a
-                      href="mailto:info@yousefcontracting.com"
-                      class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
-                    >
-                      info@yousefcontracting.com
-                    </a>
-                  </div>
-                </div>
-
-                <div class="flex items-start space-x-4 rtl:space-x-reverse">
-                  <div
-                    class="p-3 bg-primary/10 dark:bg-primary/20 rounded-full flex-shrink-0"
-                  >
-                    <Clock class="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4
-                      class="font-semibold text-secondary dark:text-white mb-1"
-                    >
-                      {{ t("contact.businessHours") }}
-                    </h4>
-                    <p class="text-gray-600 dark:text-gray-400">
-                      {{ t("contact.businessHoursValue") }}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+          <!-- Phone -->
+          <div
+            class="bg-white dark:bg-secondary p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 text-center group transform hover:-translate-y-1"
+          >
             <div
-              class="bg-gradient-to-br from-gray-100 to-gray-200 dark:from-secondary dark:to-secondary-lighter rounded-lg overflow-hidden shadow-lg h-80 flex items-center justify-center border border-gray-300 dark:border-gray-700"
+              class="w-16 h-16 bg-primary/10 dark:bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300"
             >
-              <div class="text-center">
-                <MapPin class="w-12 h-12 mx-auto mb-2 text-primary" />
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                  {{ t("contact.locationMap") }}
-                </p>
-              </div>
+              <Phone class="w-8 h-8 text-primary" />
             </div>
+            <h4 class="text-xl font-bold text-secondary dark:text-white mb-3">
+              {{ t("contact.phoneLabel") }}
+            </h4>
+            <a
+              href="tel:+966123456789"
+              dir="ltr"
+              class="inline-block text-gray-600 dark:text-gray-400 hover:text-primary transition-colors font-medium text-lg"
+            >
+              +966 12 345 6789
+            </a>
+          </div>
+
+          <!-- Email -->
+          <div
+            class="bg-white dark:bg-secondary p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 text-center group transform hover:-translate-y-1"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 dark:bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300"
+            >
+              <Mail class="w-8 h-8 text-primary" />
+            </div>
+            <h4 class="text-xl font-bold text-secondary dark:text-white mb-3">
+              {{ t("contact.emailLabel") }}
+            </h4>
+            <a
+              href="mailto:info@yousefcontracting.com"
+              class="inline-block text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+            >
+              info@yousefcontracting.com
+            </a>
+          </div>
+
+          <!-- Business Hours -->
+          <div
+            class="bg-white dark:bg-secondary p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 text-center group transform hover:-translate-y-1"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 dark:bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300"
+            >
+              <Clock class="w-8 h-8 text-primary" />
+            </div>
+            <h4 class="text-xl font-bold text-secondary dark:text-white mb-3">
+              {{ t("contact.businessHours") }}
+            </h4>
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+              {{ t("contact.businessHoursValue") }}
+            </p>
           </div>
         </div>
       </div>
     </section>
-  
-  </div> -->
+  </div>
 </template>
 
-<!-- <script setup lang="ts">
-import { ref, reactive } from "vue";
+<script setup lang="ts">
 import { useI18n } from "vue-i18n";
 import { MapPin, Phone, Mail, Clock } from "lucide-vue-next";
 
 const { t } = useI18n();
-
-const form = reactive({
-  name: "",
-  email: "",
-  phone: "",
-  message: "",
-});
-
-const isSubmitting = ref(false);
-const submitStatus = ref<"success" | "error" | null>(null);
-
-const handleSubmit = async () => {
-  isSubmitting.value = true;
-  submitStatus.value = null;
-
-  try {
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-
-    submitStatus.value = "success";
-    form.name = "";
-    form.email = "";
-    form.phone = "";
-    form.message = "";
-  } catch (error) {
-    submitStatus.value = "error";
-  } finally {
-    isSubmitting.value = false;
-    setTimeout(() => {
-      submitStatus.value = null;
-    }, 5000);
-  }
-};
-</script> -->
+</script>

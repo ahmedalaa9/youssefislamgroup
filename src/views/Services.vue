@@ -1,14 +1,11 @@
 <template>
-  <div class="flex justify-center items-center h-[80vh]">
-    <h1 class="text-5xl font-bold mt-20">Comming Soon ...</h1>
-  </div>
-  <!-- <div class="min-h-screen pt-20"> 
+  <div class="min-h-screen pt-20">
     <section
       class="relative h-[50vh] flex items-center justify-center overflow-hidden"
     >
       <div class="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1581094794329-cd28b6d7a820?w=1920&h=1080&fit=crop"
+          src="/images/hero-section.jpg"
           alt="Engineering Services"
           class="w-full h-full object-cover"
         />
@@ -38,7 +35,7 @@
         </p>
       </div>
     </section>
- 
+
     <section class="py-20 bg-white dark:bg-secondary-light">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -82,7 +79,7 @@
         </div>
       </div>
     </section>
- 
+
     <section class="py-20 bg-primary relative overflow-hidden">
       <div class="absolute inset-0 bg-pattern opacity-10"></div>
       <div class="container mx-auto px-4 text-center relative z-10">
@@ -122,83 +119,83 @@
         </router-link>
       </div>
     </section>
-  </div> -->
+  </div>
 </template>
 
 <script setup lang="ts">
-// import { useI18n } from "vue-i18n";
-// import {
-//   Building2,
-//   Zap,
-//   Droplet,
-//   Wind,
-//   PaintBucket,
-//   HardHat,
-//   ArrowRight,
-// } from "lucide-vue-next";
+import { useI18n } from "vue-i18n";
+import {
+  Building2,
+  Zap,
+  Droplet,
+  Wind,
+  PaintBucket,
+  HardHat,
+  ArrowRight,
+} from "lucide-vue-next";
 
-// const { t } = useI18n();
+const { t } = useI18n();
 
-// const servicesList = [
-//   {
-//     icon: Building2,
-//     titleKey: "servicesPage.construction.title",
-//     descKey: "servicesPage.construction.desc",
-//     features: [
-//       "servicesPage.construction.feat1",
-//       "servicesPage.construction.feat2",
-//       "servicesPage.construction.feat3",
-//     ],
-//   },
-//   {
-//     icon: Zap,
-//     titleKey: "servicesPage.electrical.title",
-//     descKey: "servicesPage.electrical.desc",
-//     features: [
-//       "servicesPage.electrical.feat1",
-//       "servicesPage.electrical.feat2",
-//       "servicesPage.electrical.feat3",
-//     ],
-//   },
-//   {
-//     icon: Droplet,
-//     titleKey: "servicesPage.plumbing.title",
-//     descKey: "servicesPage.plumbing.desc",
-//     features: [
-//       "servicesPage.plumbing.feat1",
-//       "servicesPage.plumbing.feat2",
-//       "servicesPage.plumbing.feat3",
-//     ],
-//   },
-//   {
-//     icon: Wind,
-//     titleKey: "servicesPage.hvac.title",
-//     descKey: "servicesPage.hvac.desc",
-//     features: [
-//       "servicesPage.hvac.feat1",
-//       "servicesPage.hvac.feat2",
-//       "servicesPage.hvac.feat3",
-//     ],
-//   },
-//   {
-//     icon: PaintBucket,
-//     titleKey: "servicesPage.finishing.title",
-//     descKey: "servicesPage.finishing.desc",
-//     features: [
-//       "servicesPage.finishing.feat1",
-//       "servicesPage.finishing.feat2",
-//       "servicesPage.finishing.feat3",
-//     ],
-//   },
-//   {
-//     icon: HardHat,
-//     titleKey: "servicesPage.consulting.title",
-//     descKey: "servicesPage.consulting.desc",
-//     features: [
-//       "servicesPage.consulting.feat1",
-//       "servicesPage.consulting.feat2",
-//       "servicesPage.consulting.feat3",
-//     ],
-//   },
-// ];
+const servicesList = [
+  {
+    icon: Building2,
+    titleKey: "servicesPage.construction.title",
+    descKey: "servicesPage.construction.desc",
+    features: [
+      "servicesPage.construction.feat1",
+      "servicesPage.construction.feat2",
+      "servicesPage.construction.feat3",
+    ],
+  },
+  {
+    icon: Zap,
+    titleKey: "servicesPage.electrical.title",
+    descKey: "servicesPage.electrical.desc",
+    features: [
+      "servicesPage.electrical.feat1",
+      "servicesPage.electrical.feat2",
+      "servicesPage.electrical.feat3",
+    ],
+  },
+  {
+    icon: Droplet,
+    titleKey: "servicesPage.plumbing.title",
+    descKey: "servicesPage.plumbing.desc",
+    features: [
+      "servicesPage.plumbing.feat1",
+      "servicesPage.plumbing.feat2",
+      "servicesPage.plumbing.feat3",
+    ],
+  },
+  {
+    icon: Wind,
+    titleKey: "servicesPage.hvac.title",
+    descKey: "servicesPage.hvac.desc",
+    features: [
+      "servicesPage.hvac.feat1",
+      "servicesPage.hvac.feat2",
+      "servicesPage.hvac.feat3",
+    ],
+  },
+  {
+    icon: PaintBucket,
+    titleKey: "servicesPage.finishing.title",
+    descKey: "servicesPage.finishing.desc",
+    features: [
+      "servicesPage.finishing.feat1",
+      "servicesPage.finishing.feat2",
+      "servicesPage.finishing.feat3",
+    ],
+  },
+  {
+    icon: HardHat,
+    titleKey: "servicesPage.consulting.title",
+    descKey: "servicesPage.consulting.desc",
+    features: [
+      "servicesPage.consulting.feat1",
+      "servicesPage.consulting.feat2",
+      "servicesPage.consulting.feat3",
+    ],
+  },
+];
 </script>

@@ -1,8 +1,5 @@
 <template>
-  <div class="flex justify-center items-center h-[80vh]">
-    <h1 class="text-5xl font-bold mt-20">Comming Soon ...</h1>
-  </div>
-  <!-- <div class="min-h-screen pt-20">
+  <div class="min-h-screen pt-20">
     <section
       class="relative h-[50vh] flex items-center justify-center overflow-hidden"
     >
@@ -36,24 +33,52 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div class="space-y-6">
             <h2 class="text-4xl font-bold text-secondary dark:text-white">
-              {{ t('about.whoWeAre') }}
+              {{ t("about.whoWeAre") }}
             </h2>
             <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
               {{ t("about.description") }}
             </p>
             <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
-              {{ t('about.portfolioText') }}
+              {{ t("about.portfolioText") }}
             </p>
           </div>
 
-          <div class="relative">
-            <img
-              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-              alt="Construction team"
-              class="rounded-lg shadow-2xl"
-            />
+          <div class="relative grid grid-cols-2 gap-4 sm:gap-6">
+            <div class="flex flex-col gap-4 sm:gap-6">
+              <div class="relative group rounded-2xl overflow-hidden shadow-lg h-48 sm:h-64 cursor-pointer">
+                <img
+                  src="/images/gallery/glc/glc-2.jpeg"
+                  alt="GLC Project"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                />
+                <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500"></div>
+              </div>
+              <div class="relative group rounded-2xl overflow-hidden shadow-lg h-40 sm:h-56 cursor-pointer">
+                <img
+                  src="/images/gallery/midle/midle - 1.jpg"
+                  alt="Middle East Project"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                />
+                <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500"></div>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center">
+              <div class="relative group rounded-2xl overflow-hidden shadow-xl h-64 sm:h-80 lg:h-96 transform translate-y-4 sm:translate-y-8 cursor-pointer">
+                <img
+                  src="/images/gallery/war2/war2 - 5.jpeg"
+                  alt="Paper World Project"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                />
+                <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500"></div>
+              </div>
+            </div>
+            
+            <!-- Decorative Elements -->
             <div
-              class="absolute -bottom-6 -right-6 rtl:-left-6 rtl:right-auto w-64 h-64 bg-primary/20 rounded-lg -z-10"
+              class="absolute -bottom-12 -right-12 rtl:-left-12 rtl:right-auto w-48 h-48 bg-primary/20 rounded-full blur-3xl -z-10"
+            ></div>
+            <div
+              class="absolute -top-12 -left-12 rtl:-right-12 rtl:left-auto w-48 h-48 bg-gray-400/20 rounded-full blur-3xl -z-10"
             ></div>
           </div>
         </div>
@@ -131,14 +156,14 @@
           "{{ t("slogan") }}"
         </h2>
         <p class="text-gray-300 text-lg max-w-3xl mx-auto">
-          {{ t('about.sloganDesc') }}
+          {{ t("about.sloganDesc") }}
         </p>
       </div>
     </section>
-  </div> -->
+  </div>
 </template>
 
-<!-- <script setup lang="ts">
+<script setup lang="ts">
 import { useI18n } from "vue-i18n";
 
 import { Eye, Target, Award, Clock, Users, Shield } from "lucide-vue-next";
@@ -151,4 +176,4 @@ const values = [
   { icon: Users, title: "about.value3" },
   { icon: Shield, title: "about.value4" },
 ];
-</script> -->
+</script>

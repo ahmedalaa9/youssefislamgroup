@@ -2,78 +2,124 @@
   <div
     class="group h-full overflow-hidden rounded-xl bg-white dark:bg-white/10 dark:backdrop-blur-md shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200 dark:border-white/20"
   >
-    <div class="relative h-48 overflow-hidden bg-gray-200 dark:bg-gray-800">
-      <img
-        :src="project.image"
-        :alt="project.name"
-        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-      />
+    <div class="relative h-64 overflow-hidden bg-gray-200 dark:bg-gray-800">
       <div
-        class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent group-hover:from-black/80 transition-all duration-300"
-      ></div>
-      <span
-        class="absolute bottom-4 left-4 rtl:right-4 rtl:left-auto px-3 py-1 bg-primary text-secondary text-xs font-bold rounded-full"
+        class="flex h-full transition-transform duration-500 ease-out"
+        :style="{
+          transform: `translateX(${appStore.locale === 'ar' ? currentImageIndex * 100 : -(currentImageIndex * 100)}%)`,
+        }"
       >
-        {{ project.category }}
-      </span>
+        <div
+          v-for="(image, index) in project.images"
+          :key="index"
+          class="w-full h-full flex-shrink-0 cursor-pointer"
+          @click="$emit('open-image', image)"
+        >
+          <img
+            :src="image"
+            :alt="project.name"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <button
+        v-if="project.images.length > 1"
+        @click.stop="prevImage"
+        class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center rounded-full bg-black/50 text-white hover:bg-primary transition-colors z-10"
+      >
+        <ChevronLeft
+          class="w-5 h-5"
+          :class="appStore.locale === 'ar' ? 'rotate-180' : ''"
+        />
+      </button>
+      <button
+        v-if="project.images.length > 1"
+        @click.stop="nextImage"
+        class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center rounded-full bg-black/50 text-white hover:bg-primary transition-colors z-10"
+      >
+        <ChevronRight
+          class="w-5 h-5"
+          :class="appStore.locale === 'ar' ? 'rotate-180' : ''"
+        />
+      </button>
+
+      <!-- Dots -->
+      <div
+        v-if="project.images.length > 1"
+        class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 rtl:space-x-reverse z-10"
+      >
+        <button
+          v-for="(_, index) in project.images"
+          :key="index"
+          @click.stop="currentImageIndex = index"
+          class="w-2 h-2 rounded-full transition-all"
+          :class="
+            currentImageIndex === index
+              ? 'bg-primary w-4'
+              : 'bg-white/60 hover:bg-white'
+          "
+        ></button>
+      </div>
+
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+      ></div>
     </div>
 
     <div class="p-6 space-y-4">
-      <div>
+      <div class="text-center">
         <h3
           class="text-xl font-bold text-secondary dark:text-white mb-2 group-hover:text-primary dark:group-hover:text-primary transition-colors"
         >
           {{ project.name }}
         </h3>
-        <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
-          {{ project.description }}
-        </p>
       </div>
 
-      <div
-        v-if="project.highlights"
-        class="space-y-2 pt-2 border-t border-gray-200 dark:border-white/20"
-      >
-        <div
-          v-for="highlight in project.highlights"
-          :key="highlight"
-          class="flex items-start space-x-2 rtl:space-x-reverse text-xs text-gray-600 dark:text-gray-400"
+      <div class="flex justify-center">
+        <router-link
+          to="/contact"
+          class="inline-flex items-center justify-center w-full px-4 py-2 bg-primary/10 text-primary hover:bg-primary hover:text-secondary rounded-lg font-semibold transition-colors mt-2 space-x-2 rtl:space-x-reverse"
         >
-          <CheckCircle2 class="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-          <span>{{ highlight }}</span>
-        </div>
+          <span>{{ locale === "ar" ? "استفسر الآن" : "Inquire Now" }}</span>
+          <ArrowRight
+            class="w-4 h-4"
+            :class="locale === 'ar' ? 'rotate-180' : ''"
+          />
+        </router-link>
       </div>
-
-      <router-link
-        to="/contact"
-        class="inline-flex items-center space-x-2 rtl:space-x-reverse text-sm font-semibold text-primary hover:text-primary-dark dark:hover:text-primary-light transition-colors mt-2"
-      >
-        <span>{{ locale === "ar" ? "استفسر الآن" : "Inquire Now" }}</span>
-        <ArrowRight
-          class="w-4 h-4"
-          :class="locale === 'ar' ? 'rotate-180' : ''"
-        />
-      </router-link>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed, ref } from "vue";
 import { useAppStore } from "../stores/useAppStore";
-import { CheckCircle2, ArrowRight } from "lucide-vue-next";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-vue-next";
 
 const appStore = useAppStore();
 const locale = computed(() => appStore.locale);
 
-defineProps<{
+const props = defineProps<{
   project: {
     name: string;
-    category: string;
-    categoryValue: string;
-    image: string;
-    description: string;
-    highlights?: string | string[];
+    images: string[];
   };
 }>();
+
+defineEmits(["open-image"]);
+
+const currentImageIndex = ref(0);
+
+const nextImage = () => {
+  currentImageIndex.value =
+    (currentImageIndex.value + 1) % props.project.images.length;
+};
+
+const prevImage = () => {
+  currentImageIndex.value =
+    (currentImageIndex.value - 1 + props.project.images.length) %
+    props.project.images.length;
+};
 </script>
