@@ -58,24 +58,24 @@
               class="flex items-center space-x-3 rtl:space-x-reverse text-gray-400 hover:text-primary transition-colors text-sm"
             >
               <Phone class="w-4 h-4" />
-              <span>+966 12 345 6789</span>
+              <span dir="ltr" class="mx-2">+966 12 345 6789</span>
             </a>
             <a
               href="mailto:info@yousefcontracting.com"
               class="flex items-center space-x-3 rtl:space-x-reverse text-gray-400 hover:text-primary transition-colors text-sm"
             >
               <Mail class="w-4 h-4" />
-              <span>info@yousefcontracting.com</span>
+              <span class="mx-2">info@yousefcontracting.com</span>
             </a>
             <div
               class="flex items-center space-x-3 rtl:space-x-reverse text-gray-400 text-sm"
             >
               <MapPin class="w-4 h-4" />
-              <span>{{ t("contact.addressText") }}</span>
+              <span class="mx-2">{{ t("contact.addressText") }}</span>
             </div>
           </div>
 
-          <div class="mt-6">
+          <!-- <div class="mt-6">
             <h4 class="text-sm font-semibold mb-3 text-primary">
               {{ t("footer.followUs") }}
             </h4>
@@ -105,7 +105,7 @@
                 <Instagram class="w-5 h-5" />
               </a>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -128,10 +128,10 @@ import {
   Phone,
   Mail,
   MapPin,
-  Linkedin,
-  Twitter,
-  Facebook,
-  Instagram,
+  // Linkedin,
+  // Twitter,
+  // Facebook,
+  // Instagram,
 } from "lucide-vue-next";
 
 const { t } = useI18n();
