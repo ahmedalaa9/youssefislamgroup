@@ -45,34 +45,46 @@
 
           <div class="relative grid grid-cols-2 gap-4 sm:gap-6">
             <div class="flex flex-col gap-4 sm:gap-6">
-              <div class="relative group rounded-2xl overflow-hidden shadow-lg h-48 sm:h-64 cursor-pointer">
+              <div
+                class="relative group rounded-2xl overflow-hidden shadow-lg h-48 sm:h-64 cursor-pointer"
+              >
                 <img
                   src="/images/gallery/glc/glc-2.jpeg"
                   alt="GLC Project"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 />
-                <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                <div
+                  class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500"
+                ></div>
               </div>
-              <div class="relative group rounded-2xl overflow-hidden shadow-lg h-40 sm:h-56 cursor-pointer">
+              <div
+                class="relative group rounded-2xl overflow-hidden shadow-lg h-40 sm:h-56 cursor-pointer"
+              >
                 <img
-                  src="/images/gallery/midle/midle - 1.jpg"
+                  src="/images/gallery/midle/midle-1.jpeg"
                   alt="Middle East Project"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 />
-                <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                <div
+                  class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500"
+                ></div>
               </div>
             </div>
             <div class="flex flex-col justify-center">
-              <div class="relative group rounded-2xl overflow-hidden shadow-xl h-64 sm:h-80 lg:h-96 transform translate-y-4 sm:translate-y-8 cursor-pointer">
+              <div
+                class="relative group rounded-2xl overflow-hidden shadow-xl h-64 sm:h-80 lg:h-96 transform translate-y-4 sm:translate-y-8 cursor-pointer"
+              >
                 <img
-                  src="/images/gallery/war2/war2 - 5.jpeg"
+                  src="/images/gallery/war2/war2-5.jpeg"
                   alt="Paper World Project"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 />
-                <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                <div
+                  class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500"
+                ></div>
               </div>
             </div>
-            
+
             <!-- Decorative Elements -->
             <div
               class="absolute -bottom-12 -right-12 rtl:-left-12 rtl:right-auto w-48 h-48 bg-primary/20 rounded-full blur-3xl -z-10"
