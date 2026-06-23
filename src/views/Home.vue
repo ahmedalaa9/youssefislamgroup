@@ -251,12 +251,12 @@
             <div class="grid grid-cols-2 gap-4">
               <div class="space-y-4 mt-8">
                 <img
-                  src="/images/gallery/war2/war2 - 1.jpeg"
+                  src="/images/gallery/war2/war2-1.jpeg"
                   alt="GLC Project"
                   class="rounded-2xl shadow-lg w-full h-64 object-cover hover:scale-[1.02] transition-transform duration-500"
                 />
                 <img
-                  src="/images/gallery/war2/war2 - 3.jpeg"
+                  src="/images/gallery/war2/war2-3.jpeg"
                   alt="Egada Project"
                   class="rounded-2xl shadow-lg w-full h-48 object-cover hover:scale-[1.02] transition-transform duration-500"
                 />
@@ -268,7 +268,7 @@
                   class="rounded-2xl shadow-lg w-full h-48 object-cover hover:scale-[1.02] transition-transform duration-500"
                 />
                 <img
-                  src="/images/gallery/khalegya/khalegya-1.jpg"
+                  src="/images/gallery/khalegya/khalegya-1.jpeg"
                   alt="Khalegya Project"
                   class="rounded-2xl shadow-lg w-full h-64 object-cover hover:scale-[1.02] transition-transform duration-500"
                 />

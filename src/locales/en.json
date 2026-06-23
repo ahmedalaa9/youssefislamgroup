@@ -115,23 +115,89 @@
   "projects": {
     "title": "Our Projects",
     "subtitle": "Portfolio of Excellence",
-    "khalegya": {
-      "name": "El khalegya"
-    },
-    "glc": {
-      "name": "GLC"
-    },
-    "egada": {
-      "name": "Egada"
-    },
-    "alam_elwaraa": {
-      "name": "Alam elwaraa"
+    "premium": {
+      "name": "Premium Metal Industries Factory"
     },
     "seken": {
-      "name": "seken factory"
+      "name": "Seken Manufacturing Factory"
+    },
+    "drasa": {
+      "name": "Drasa Company Factory"
+    },
+    "adan": {
+      "name": "Adan International Trading Factory"
+    },
+    "bayan": {
+      "name": "Al Bayan Al Jadeed Manufacturing Factory"
+    },
+    "ghethaa": {
+      "name": "Ghethaa Al Tafawuq Honey & Sweets Factory"
+    },
+    "shawarma": {
+      "name": "Shawarma Lanoni Factory"
+    },
+    "hawa": {
+      "name": "Pure Air Company Factory"
     },
     "middle_east": {
-      "name": "middle east"
+      "name": "Middle East Manufacturing Company"
+    },
+    "khalegya": {
+      "name": "Gulf Packaging Systems - 1st Industrial City"
+    },
+    "khalegya2": {
+      "name": "Gulf Packaging Systems - 2nd Industrial City"
+    },
+    "glc": {
+      "name": "GLC Arabia Paints Factory"
+    },
+    "zamil_abiat": {
+      "name": "Zamil Showroom at Abyat Exhibition"
+    },
+    "fea": {
+      "name": "Al Fea Developer Material Separation Co."
+    },
+    "eskan": {
+      "name": "Eskan International Company"
+    },
+    "waha": {
+      "name": "Arabian Oasis Industrial Company"
+    },
+    "soyuf": {
+      "name": "Al Soyuf Manufacturing Factory"
+    },
+    "alam_elwaraa": {
+      "name": "Paper World Paper Products Factory"
+    },
+    "jawhara": {
+      "name": "Jawharat Al Plastic Industries Factory"
+    },
+    "zawaya": {
+      "name": "Zawaya Plastic Manufacturing Factory"
+    },
+    "shada": {
+      "name": "Shada Al Arab Plastic Manufacturing"
+    },
+    "zamil_tanks": {
+      "name": "Zamil Tanks Factory"
+    },
+    "zamil_warehouse": {
+      "name": "Zamil Tanks Warehouse"
+    },
+    "basateen": {
+      "name": "Basateen Baladi Factory"
+    },
+    "munawala": {
+      "name": "Al Munawala Limited Company"
+    },
+    "rima": {
+      "name": "Rima Aluminum Panels Company"
+    },
+    "ghadeer": {
+      "name": "Al Ghadeer National Industrial Company"
+    },
+    "egada": {
+      "name": "Egada Specialized Construction"
     }
   },
   "trusted": {
